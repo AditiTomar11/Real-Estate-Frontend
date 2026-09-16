@@ -1,0 +1,118 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: times, sans-serif;
+  width: 100%;
+  z-index: 100;
+
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  box-shadow: none;
+
+  transition:
+    background 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+/* Solid state — matches footer color for top-to-bottom brand consistency */
+.navbar--scrolled {
+  background: #1a1f2b;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.18);
+}
+
+.navbar__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 68px;
+}
+
+.navbar__logo {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 660;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar__logo span {
+  color: var(--gold);
+}
+
+.navbar__links {
+  display: flex;
+  gap: 32px;
+}
+
+.navbar__link {
+  font-size: 20px;
+  font-weight: 500;
+
+  color: rgba(255, 255, 255, 0.85);
+
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+
+  transition: color 0.25s ease;
+}
+
+.navbar__link:hover {
+  color: #ffffff;
+  font-weight: 660;
+  line-height: 1.2;
+}
+
+.navbar__link.active {
+  color: #ffffff;
+  border-bottom-color: var(--accent, #d52b8a);
+}
+
+.navbar .navbar__login {
+  padding: 9px 18px;
+  border-radius: 14px;
+  font-size: 18px;
+  color: #ffffff;
+
+  border-color: rgba(255, 255, 255, 0.7);
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.navbar .navbar__login:hover {
+  background: #ffffff;
+  color: #1a1f2b;
+}
+
+.navbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.navbar__user {
+  font-size: 13.5px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 720px) {
+  .navbar__links {
+    gap: 18px;
+  }
+
+  .navbar__link {
+    font-size: 13.5px;
+  }
+}
+
+@media (max-width: 560px) {
+  .navbar__links {
+    display: none;
+  }
+}

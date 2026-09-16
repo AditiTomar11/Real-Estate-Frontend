@@ -1,0 +1,48 @@
+.auth-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 21, 33, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: 24px;
+}
+
+.auth-modal-card {
+  position: relative;
+  background: var(--paper-raised);
+  border-radius: 6px;
+  padding: 36px 32px 30px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.auth-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: none;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--ink-soft);
+  border-radius: 50%;
+}
+
+.auth-modal-close:hover {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.auth-modal-title {
+  font-size: 24px;
+  margin-bottom: 22px;
+}
+
+.auth-modal-card .auth-form {
+  max-width: none;
+}

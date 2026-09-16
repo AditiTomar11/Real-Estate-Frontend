@@ -1,0 +1,25 @@
+.sac {
+  display: flex;
+  gap: 5px;
+}
+
+.sac__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--ink);
+}
+
+.sac__btn:hover {
+  background: #fff;
+  color: var(--gold-deep);
+}
+
+.sac__btn--danger:hover {
+  color: #b23b3b;
+}

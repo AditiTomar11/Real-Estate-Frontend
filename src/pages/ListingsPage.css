@@ -1,0 +1,40 @@
+.listings {
+  padding: 40px 24px 72px;
+}
+
+.listings__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 28px;
+}
+
+.listings__head h1 {
+  font-size: 30px;
+}
+
+.listings__head p {
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+
+.listings__layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.listings__sidebar {
+  position: sticky;
+  top: 90px;
+}
+
+@media (max-width: 860px) {
+  .listings__layout {
+    grid-template-columns: 1fr;
+  }
+  .listings__sidebar {
+    position: static;
+  }
+}

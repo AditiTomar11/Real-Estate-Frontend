@@ -1,0 +1,33 @@
+.fav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--ink-soft);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: color 0.15s ease, transform 0.1s ease;
+}
+
+.fav-btn:hover {
+  color: var(--gold-deep);
+}
+
+.fav-btn:active {
+  transform: scale(0.9);
+}
+
+.fav-btn--active {
+  color: var(--gold);
+}
+
+.fav-btn--sm {
+  width: 32px;
+  height: 32px;
+}
+
+.fav-btn--md {
+  width: 40px;
+  height: 40px;
+}

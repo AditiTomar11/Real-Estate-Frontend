@@ -1,0 +1,78 @@
+.comparebar {
+  position: sticky;
+  bottom: 0;
+  background: var(--ink);
+  border-top: 1px solid #2b3752;
+  z-index: 15;
+}
+
+.comparebar__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px 24px;
+}
+
+.comparebar__thumbs {
+  display: flex;
+  gap: 10px;
+}
+
+.comparebar__thumb {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.comparebar__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.comparebar__remove {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  border: none;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 13px;
+  line-height: 1;
+  border-radius: 0 0 0 4px;
+}
+
+.comparebar__actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.comparebar__clear {
+  background: none;
+  border: none;
+  color: #c4cbd9;
+  font-size: 13.5px;
+}
+
+.comparebar__clear:hover {
+  color: #fff;
+}
+
+.comparebar .btn-gold:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 640px) {
+  .comparebar__row {
+    flex-wrap: wrap;
+  }
+}

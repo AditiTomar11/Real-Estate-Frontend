@@ -1,0 +1,37 @@
+.compare-page {
+  padding: 40px 24px 80px;
+}
+
+.compare-page__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 28px;
+}
+
+.compare-page__head h1 {
+  font-size: 30px;
+}
+
+.compare-page__clear {
+  background: none;
+  border: none;
+  color: var(--gold-deep);
+  font-size: 13.5px;
+  font-weight: 500;
+}
+
+.compare-page__clear:hover {
+  text-decoration: underline;
+}
+
+.compare-page__empty {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.compare-page__empty p {
+  color: var(--ink-soft);
+  font-size: 14.5px;
+  margin-bottom: 18px;
+}

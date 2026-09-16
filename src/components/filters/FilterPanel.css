@@ -1,0 +1,62 @@
+.filterpanel {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.filterpanel__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filterpanel__field label {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+.filterpanel__field input,
+.filterpanel__field select {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 9px 10px;
+  font-size: 14px;
+  font-family: var(--font-body);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.filterpanel__field input:focus,
+.filterpanel__field select:focus {
+  border-color: var(--gold);
+}
+
+.filterpanel__range-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filterpanel__range-row input {
+  width: 0;
+  flex: 1;
+}
+
+.filterpanel__reset {
+  background: none;
+  border: none;
+  color: var(--gold-deep);
+  font-size: 13.5px;
+  font-weight: 500;
+  padding: 4px 0;
+  text-align: left;
+}
+
+.filterpanel__reset:hover {
+  text-decoration: underline;
+}
