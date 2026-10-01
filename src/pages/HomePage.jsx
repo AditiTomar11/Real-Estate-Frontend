@@ -208,13 +208,13 @@ export default function HomePage() {
           </div>
 
           <div className="hero__property-type">
-            <Link to="/listings?propertyType=residential" className="hero__type hero__type--active">
-              Residential
-            </Link>
-            <Link to="/listings?propertyType=commercial" className="hero__type">
-              Commercial
-            </Link>
-          </div>
+  <Link to="/listings?type=RESIDENTIAL" className="hero__type hero__type--active">
+    Residential
+  </Link>
+  <Link to="/listings?type=COMMERCIAL" className="hero__type">
+    Commercial
+  </Link>
+</div>
 
           <div className="hero__stats">
             <div className="hero__stat">
