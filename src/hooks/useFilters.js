@@ -1,17 +1,19 @@
 import { useCallback, useEffect, useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { useProperties } from '../context/PropertiesContext';
 
 export function useFilters() {
   const { loadProperties } = useProperties();
-  const [filters, setFilters] = useState({
-    query: '',
-    city: '',
-    type: '',
+  const [searchParams] = useSearchParams();
+
+  const [filters, setFilters] = useState(() => ({
+    query: searchParams.get('query') || '',
+    city: searchParams.get('city') || '',
+    type: (searchParams.get('type') || '').toUpperCase(),
     bhk: '',
     minPrice: '',
     maxPrice: '',
-  });
-
+  }));
   const setFilter = useCallback((key, value) => {
     setFilters((prev) => ({ ...prev, [key]: value }));
   }, []);
